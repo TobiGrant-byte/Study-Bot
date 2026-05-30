@@ -29,7 +29,7 @@ export default function ChatWindow({ messages, loading, error, onSend }) {
         </div>
         <div className="ml-auto flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-slate-500 text-xs font-body">Gemini 2.0</span>
+          <span className="text-slate-500 text-xs font-body">Scholar 1.0</span>
         </div>
       </div>
 
