@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080f1a;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1929;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a84c44;
+  border-radius: 10px;
+}
+
+.dot1 { animation: bounce3 1.2s ease-in-out 0s infinite; }
+.dot2 { animation: bounce3 1.2s ease-in-out 0.2s infinite; }
+.dot3 { animation: bounce3 1.2s ease-in-out 0.4s infinite; }
+
+@keyframes bounce3 {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}
+
+@keyframes fadeSlideIn {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeSlideIn {
+  animation: fadeSlideIn 0.35s ease-out;
+}
